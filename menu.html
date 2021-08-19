@@ -1,0 +1,20 @@
+<div id="navbar">
+  <ul>
+    <li>tab1</li>
+    <li>tab2</li>
+    <li id="moretab">more</li>
+  </ul>
+</div> 
+<div id="categories">
+  <ul>
+    <li>cats</li>
+    <li>dogs</li>
+  </ul>
+</div>
+
+$("#moretab").hover(function(){
+  $("#categories").css("visibility","visible"); 
+});
+$("#categories").mouseout(function() {
+    $("#categories").css("visibility","hidden"); 
+});
